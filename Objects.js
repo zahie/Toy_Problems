@@ -15,3 +15,64 @@
 // write a function that takes array of strings and returns an array of the strings that have the same length
 	    ['hi','hello','welcome','hy'] // ==> ["hi","hy"]
 
+var amr = {
+	fullName : {first :'amr', last : 'droubi'},
+	age : 27,
+	favoriteSport : 'basket ball'
+	nationality : 'syrian'
+}
+
+var waleed = {
+	fullName : {first :'waleed', last : 'raslan'},
+	age : 26,
+	favoriteSport : 'gym'
+	nationality : 'syrian'
+}
+
+var fareed = {
+	fullName : {first :'fareed', last : 'hisham'},
+	age : 25,
+	favoriteSport : 'table tennis'
+	nationality : 'jordanian'
+}
+
+var anas = {
+	fullName : {first :'anas', last : 'kalash'},
+	age : 25,
+	favoriteSport : 'soccer'
+	nationality : 'syrian'
+}
+
+var owais = {
+	fullName : {first :'owais', last : 'daboul'},
+	age : 20,
+	favoriteSport : 'running'
+	nationality : 'syrian'
+}
+
+var mates = []
+mates.push(owais)
+mates.push(fareed)
+mates.push(anas)
+mates.push(waleed)
+mates.push(amr)
+
+mates
+
+function older(arr) {
+	var older = arr[0].age
+	var c = 1
+	while(c < arr.length) {
+		if (arr[c].age > older)
+			older = arr[c].age
+		c++
+	}
+	return older
+}
+
+older(mates)
+
+function numberOfObjKeys(obj) {
+	return Object.keys(obj).length
+}
+
