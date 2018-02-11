@@ -4,6 +4,13 @@
 	// -favorite sports 
 	// -nationality
 	// and then save theme in one array called mates!
+	var friends={
+			fullName:"Ather Mahmoud" , "Monther ", "Mohammad Derani "," Samer Salma","Nader Nasor"
+			age:34,22,25,,24,27 
+			favorieSports:"Flying Disk ","  ", " "
+			nationality:" Iraq"," "
+	}
+	var 
 
 // 2-depending on the previous exercises , write a function that returns the older classmate from mates array.
 
