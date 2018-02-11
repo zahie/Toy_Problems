@@ -32,6 +32,7 @@ function oldestClassmate (array) {
 			}
 		}
 	return oldest;
+	
 	}
 }
 
