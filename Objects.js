@@ -1,17 +1,28 @@
-// 1-define objects for 5 of your classmater containing the following keys:
-	// -full name 
-	// -age 
-	// -favorite sports 
-	// -nationality
-	// and then save theme in one array called mates!
+var matObj {
+	fullName :"",
+	age : ,
+	favSport :"",
+	nationality : ""
+}
 
-// 2-depending on the previous exercises , write a function that returns the older classmate from mates array.
 
-// 3-write a function that takes an object as argument and returns how many keys does that object contain.
-	 nbOfObjKeys({}) // ==> 0
-	 nbOfObjKeys({name:"housam",age:"3"}) // ==> 2
+mats=[{fullName:"ahmad x", age:20 ,favSport:"football" ,nationality : "jord"} ,
+{fullName:"ali", age:24 ,favSport:"bascketball" ,nationality : "palestain"},
+{fullName:"alex", age:27 ,favSport:"tennes" ,nationality : "american"},
+{fullName:"manela", age:30 ,favSport:"swimming" ,nationality : "french"},
+{fullName:"joe", age:25 ,favSport:"running" ,nationality : "maroco"}]
 
-// if you finished the above, solve the following:
-// write a function that takes array of strings and returns an array of the strings that have the same length
-	    ['hi','hello','welcome','hy'] // ==> ["hi","hy"]
+function olderMat(array){
+	var x = array[0]["age"]
+	for (var i = 1; i < array.length; i++) {
+		if(array[i]["age"] > x){
+			x = array[i]["age"]
+		}
+	}
+	return x
+}
 
+function numOfkeys(obj){
+	var x = Object.keys(obj)
+	return x.length
+}
