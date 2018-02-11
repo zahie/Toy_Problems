@@ -95,9 +95,20 @@ function findSameLength(arr)
 			if(length === arr1[j].length)
 			{
 				arr2.push(arr1[j]);
+				count++;
 			}
 		}
-		if(arr2.length >0)
-			break;
+		if(count === 1)
+		{
+			arr2.splice(arr2.length-1, 1);
+			count=0;
+			i--;
+		}
+		else
+		{
+			count =0;
+		}
 	}
+
+	return arr2;
 }
