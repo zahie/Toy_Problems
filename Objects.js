@@ -4,7 +4,7 @@
 	// -favorite sports 
 	// -nationality
 	// and then save theme in one array called mates!
-
+  
 
 	var mates =[
 	{
