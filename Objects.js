@@ -65,7 +65,7 @@ function sameLength (array) {
 	var res=[]
 	while (i<array.length){
      i=i+1
-if (array[i]===str.length[i]){
+if (array[i].length===str.length[i]){
      res=res.push(array[i])
      }
 	}
