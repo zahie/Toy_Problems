@@ -6,7 +6,7 @@
 	// and then save theme in one array called mates!
 
 // 2-depending on the previous exercises , write a function that returns the older classmate from mates array.
-
+some changes here and ther
 // 3-write a function that takes an object as argument and returns how many keys does that object contain.
 	 nbOfObjKeys({}) // ==> 0
 	 nbOfObjKeys({name:"housam",age:"3"}) // ==> 2
