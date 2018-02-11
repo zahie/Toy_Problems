@@ -21,7 +21,7 @@ function older(arr){
 		}
 
 	}
-}
+}  
 // 3-write a function that takes an object as argument and returns how many keys does that object contain.
 	 nbOfObjKeys({}) // ==> 0
 	 nbOfObjKeys({name:"housam",age:"3"}) // ==> 2
