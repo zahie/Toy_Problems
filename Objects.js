@@ -40,7 +40,7 @@ function oldest(n){
 	// nbOfObjKeys({name:"housam",age:"3"}) // ==> 2
 function Key_Number(n){
 	var result=0
-	for (n key in n ){
+	for (var key in n ){
 		result++;
 	}
 	return result;
