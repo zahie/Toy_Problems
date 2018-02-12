@@ -7,3 +7,56 @@
 	// 	-calculate the number of male friends that your class have by writing a function called nbOfMale.
 	// 	-Write a function searchMates that, given a query and an array of Mates,
 	//           searche the array of mates for "matching" mate. You will decide what way you want to write in your search algorithm.
+//factory function 
+function makeClassmates(name,age,nationality,gender)
+{
+	return {
+		name:name,
+		age:age,
+		nationality:nationality,
+		gender:gender
+	}
+}
+
+var classmate1=makeClassmates("Mais Mohtaseb",31,"Jordanian","female")
+var classmate2=makeClassmates("Mona Saed",27,"yemani","female")
+var classmate3=makeClassmates("Alik alaqraa",22,"Ukranian","male")
+var classmate4=makeClassmates("Abdalhameed abullah",29,"Syrian","male")
+//array of classmates
+ var classMates=[classmate1,classmate2,classmate3,classmate4]
+
+ //display function
+ function displayFriend(mate)
+ {
+ 	return mate.name + " " + mate.age + " " + mate.nationality
+ }
+function addFriend(mate)
+{
+  classMates.push(mate)
+}
+function nbOfMale(classMatesArr)
+{
+	var count=0
+	for (var i =0;i<classMatesArr.length;i++)
+	{
+		if (classMatesArr[i].gender==="male")
+		{
+			count=count+1
+		}
+
+	}
+	return count
+}
+function searchMates(query,MatesArr)
+{
+	var newArr=[]
+	//I want to search for all the people who are in the age that I'm lokking for 
+  for (var i=0;i<MatesArr.length;i++)
+       {
+       	if(MatesArr[i].age===query)
+       	{
+       		newArr.push(MatesArr[i])
+       	}
+       }
+       return newArr
+}
