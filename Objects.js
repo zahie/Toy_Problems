@@ -39,7 +39,7 @@ var obj5={
 
 }
 ]
-
+var hello;
 
 // 2-depending on the previous exercises , write a function that returns the older classmate from mates array.
 function older(obj){
