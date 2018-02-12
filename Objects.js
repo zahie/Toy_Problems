@@ -32,10 +32,10 @@
 		nationality:"Jordanian"
 	},
 	{
-		fullName:"Tal Alomary",
+		fullName:"Ahmed Al zoubie",
 		age:24,
 		favouritSport:"swimming",
-		nationality:"Jordanian"
+		nationality:"Syrian"
 	}]
 	
 
