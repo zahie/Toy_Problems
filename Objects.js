@@ -15,6 +15,19 @@
 // if you finished the above, solve the following:
 // write a function that takes array of strings and returns an array of the strings that have the same length
 	    ['hi','hello','welcome','hy'] // ==> ["hi","hy"]
+
+function keys (obj){
+	
+
+}
+
+
+
+
+
+
+
+
 // solution 1 
 var obj1={ 
 	fullName:'MaisMuhtaseb',                 
