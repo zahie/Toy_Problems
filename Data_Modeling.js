@@ -39,7 +39,7 @@ function nbOfMale(classMatesArr)
 	var count=0
 	for (var i =0;i<classMatesArr.length;i++)
 	{
-		if (classMatesArr[i].gender==="male")
+		if (classMatesArr[i].gender==="male")  
 		{
 			count=count+1
 		}
