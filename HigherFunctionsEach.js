@@ -9,6 +9,17 @@
 	 //your code here
 	}
 
+	function absAll(array) {
+		var arr = []
+		each(array, function(element){
+			if (element < 0) {
+				arr.push(element * -1)
+			}
+			else arr.push(element)
+		})
+		return arr
+	}
+
 	/*
 	2) using improved each write function that multiply each element in array with
 	 4 if index multiply of 4 
@@ -23,5 +34,11 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+	
+		each(array, function(element, i){
+			if(i % 4 === 0 && i != 0){
+				array[i] *= 4
+			}
+		})
+		return array
 	}
