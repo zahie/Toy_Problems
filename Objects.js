@@ -19,8 +19,10 @@ firstName: "atheer ", middleName: "mohammed", lastName: "dunno ",age:28,favorite
 var mates = [mate1 + mate2 + mate3 + mate4 + mate5];
    
 // 2-depending on the previous exercises , write a function that returns the older classmate from mates array.
-function olderClassMate(mates)
-var 
+function olderClassMate(mates,age1)
+var result = []
+for (var i = 0: mates.lenght <)
+
 // 3-write a function that takes an object as argument and returns how many keys does that object contain.
 	 nbOfObjKeys({}) // ==> 0
 	 nbOfObjKeys({name:"housam",age:"3"}) // ==> 2
