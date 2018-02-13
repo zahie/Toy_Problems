@@ -2,11 +2,21 @@
     //     if it's negative make it positive 
     function each(array, func) {
         for (var i = 0; i < array.length; i++) {
-          func(array[i]);
+          func(array[i], i);
         }
     }
-	function absAll(array) {
-	 //your code here
+	function absAll(array, ele) {
+	each (array, (ele, i){
+    if (ele >=0){
+    	return array[i];
+
+    }
+    else {
+    	return array[i]*-1;
+
+    }
+    return array;
+	});
 	}
 
 	/*
