@@ -6,8 +6,17 @@
         }
     }
 	function absAll(array) {
-	 //your code here
-	}
+var result=[];
+each(array, function(f){
+if (f<0){
+	result.push(f*(-1))
+}else if(f>0){
+	result.push(f)
+}
+});
+
+return result;
+}
 
 	/*
 	2) using improved each write function that multiply each element in array with
@@ -23,5 +32,15 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+	   var result=[];
+
+	   each(array,function(f,i){
+	   	if (f%4===0){
+	   		result.push(f*4)
+	   	}
+
+
+
+	   });
+	   return result;
 	}
