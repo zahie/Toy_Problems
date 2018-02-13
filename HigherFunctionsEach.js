@@ -7,6 +7,15 @@
     }
 	function absAll(array) {
 	 //your code here
+	 var arr = [];
+	 each(array,function(element){
+	 	if(element >= 0 ){
+	 		arr.push(element);
+	 	} else {
+	 		arr.push(-element);
+	 	}
+	 });
+	 return arr;
 	}
 
 	/*
@@ -22,6 +31,18 @@
             func(array[i], i);
         }
     }
+    /*
+	the question ask me to use (index) if it is  multiply of 4 it will give me that element mutiplay by 4;
+	But the example in the question is multiplaying 4 for each element that multiplay of 4.
+	and as i ask HIR they told me to solve as the question ask not as the example doing.
+    */
 	function multiplyOfFour(array) {
 	    //your code here
+	    var arr = [];
+	    each(array,function(element,i){
+	    	if (i %4 === 0){
+	    		arr.push(element*4)
+	    	}
+	    })
+	    return arr;
 	}
