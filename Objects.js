@@ -25,7 +25,7 @@
 		age: 30,
 		favoritesport: "fretzie",
 		nationality: "jordanian"},
-		{
+		{s
 		fullname: "mona",
 		age: 27,
 		favoritesport: "ping pong",
