@@ -34,7 +34,7 @@
 	function multiplyOfFour(array) {
 	     var MultiplyArr=[]
 		each(array,function(num,i){
-			if(i%4===0){
+			if(num%4===0){
 				MultiplyArr.push(num*4)
 			}
 			
