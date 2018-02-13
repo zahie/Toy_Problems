@@ -6,7 +6,14 @@
         }
     }
 	function absAll(array) {
-	 //your code here
+		var result=[];
+		each(array,function(x){if(x>=0){
+			result.push(x);}
+			else{result.push(-1*x)}
+		})
+		return result;
+
+	 
 	}
 
 	/*
@@ -15,7 +22,10 @@
 
 	 var x = [2, 4, 6, 8, 10, 12, 14, 16]
 		multiplyOfFour(x);  => [16, 64 , 256] 
+		
     */
+    // Hanan Nouman
+    //Then the question is to push element*4 if it was a multiple of 4.
    
     function each(array, func) {
         for (var i = 0; i < array.length; i++) {
@@ -23,5 +33,8 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+		var four=[];
+		each(array,function(x,index){if (x%4==0 && x!=0){four.push(x*4)}})
+		return four;
+			
 	}
