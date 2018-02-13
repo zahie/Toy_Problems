@@ -6,7 +6,16 @@
         }
     }
 	function absAll(array) {
-	 //your code here
+	 var positiveArr=[]
+		each(array,function(num){
+			if(num<0){
+				positiveArr.push(-1*num)
+			}
+			else{
+				positiveArr.push(num)
+			}
+		})
+		return positiveArr
 	}
 
 	/*
@@ -23,5 +32,12 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+	     var MultiplyArr=[]
+		each(array,function(num,i){
+			if(i%4===0){
+				MultiplyArr.push(num*4)
+			}
+			
+		})
+		return MultiplyArr
 	}
